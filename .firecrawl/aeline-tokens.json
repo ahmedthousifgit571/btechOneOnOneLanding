@@ -1,0 +1,283 @@
+{
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "bodyFont": "sans-serif",
+  "topColors": [
+    [
+      "rgb(0, 0, 0)",
+      1271
+    ],
+    [
+      "rgb(0, 0, 238)",
+      157
+    ],
+    [
+      "rgb(255, 255, 255)",
+      143
+    ],
+    [
+      "rgb(19, 19, 19)",
+      122
+    ],
+    [
+      "rgb(47, 47, 47)",
+      28
+    ],
+    [
+      "rgb(123, 123, 123)",
+      26
+    ],
+    [
+      "rgb(214, 253, 112)",
+      12
+    ],
+    [
+      "rgba(19, 19, 19, 0.5)",
+      9
+    ],
+    [
+      "rgba(255, 255, 255, 0.75)",
+      4
+    ],
+    [
+      "rgba(255, 255, 255, 0.8)",
+      2
+    ],
+    [
+      "rgba(18, 40, 53, 0.25)",
+      1
+    ]
+  ],
+  "topBgs": [
+    [
+      "rgb(255, 255, 255)",
+      65
+    ],
+    [
+      "rgb(19, 19, 19)",
+      45
+    ],
+    [
+      "rgb(242, 242, 242)",
+      24
+    ],
+    [
+      "rgb(214, 253, 112)",
+      10
+    ],
+    [
+      "rgb(205, 251, 86)",
+      5
+    ],
+    [
+      "rgb(56, 198, 246)",
+      3
+    ],
+    [
+      "rgb(0, 0, 0)",
+      3
+    ],
+    [
+      "rgb(47, 47, 47)",
+      2
+    ],
+    [
+      "rgba(255, 255, 255, 0)",
+      1
+    ],
+    [
+      "rgba(18, 40, 53, 0.25)",
+      1
+    ],
+    [
+      "rgb(235, 242, 19)",
+      1
+    ]
+  ],
+  "topFonts": [
+    [
+      "sans-serif",
+      1410
+    ],
+    [
+      "\"Plus Jakarta Sans\", \"Plus Jakarta Sans Placeholder\", sans-serif",
+      282
+    ],
+    [
+      "\"Geist Mono\", monospace",
+      39
+    ],
+    [
+      "\"Times New Roman\"",
+      30
+    ],
+    [
+      "Roboto, \"Roboto Placeholder\", sans-serif",
+      7
+    ],
+    [
+      "Inter, \"Inter Placeholder\", sans-serif",
+      6
+    ],
+    [
+      "\"Plus Jakarta Sans\"",
+      1
+    ]
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Building the future with  AI and strategy",
+      "size": "60px",
+      "weight": "500",
+      "lh": "72px",
+      "ls": "-3.6px"
+    },
+    {
+      "tag": "H2",
+      "text": "A global consulting partner",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "dedicated to building",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "smarter",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "and",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "more  adaptive",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "Comprehensive consulting and intelligent innovatio",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "Where human insight meets intelligent technology",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "Flexible Plans Built for Every Stage of Growth",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "What they say about us?",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "Latest insights and trends",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    },
+    {
+      "tag": "H2",
+      "text": "We combine human insight with artificial intellige",
+      "size": "48px",
+      "weight": "500",
+      "lh": "56.16px",
+      "ls": "-2.88px"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "CONTACT US\n\nCONTACT US",
+      "bg": "rgb(214, 253, 112)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "10px 16px"
+    },
+    {
+      "text": "VIEW DEMO\n\nVIEW DEMO",
+      "bg": "rgba(18, 40, 53, 0.25)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "14px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(214, 253, 112)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "4px 4px 4px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(19, 19, 19)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "4px 4px 4px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(19, 19, 19)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "4px 4px 4px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(19, 19, 19)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "10px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(19, 19, 19)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "10px 16px"
+    },
+    {
+      "text": "GET STARTED\n\nGET STARTED",
+      "bg": "rgb(19, 19, 19)",
+      "color": "rgb(0, 0, 238)",
+      "radius": "48px",
+      "padding": "10px 16px"
+    }
+  ]
+}

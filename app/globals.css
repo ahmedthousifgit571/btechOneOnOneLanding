@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Sora", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-script: "Dancing Script", cursive;
+
+  /* Mustard + Black + White design tokens */
+  --bg-void: #ffffff;
+  --bg-panel: #fafaf8;
+  --bg-panel-2: #f0ede8;
+  --text-dark: #0f0f0f;
+
+  --mustard: #e8a804;
+  --mustard-light: #f5c842;
+  --mustard-muted: #fff3c0;
+
+  /* ember aliases — kept for CSS class compat */
+  --ember-500: #e8a804;
+  --ember-600: #0f0f0f;
+  --ember-700: #333333;
+  --amber: #e8a804;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg-void);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--mustard);
+  color: #0f0f0f;
+}
+
+/* Reveal utility targeted by GSAP */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: transform, opacity;
+}
+
+.reveal-fade {
+  opacity: 0;
+  will-change: opacity;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  will-change: transform, opacity;
+}
+
+/* Clip-path wipe reveal — used on section headings */
+.reveal-wipe {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  will-change: clip-path, opacity;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Editorial display heading */
+.display-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  color: var(--text-dark);
+}
+
+/* Eyebrow label — mustard */
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--mustard);
+  font-weight: 700;
+}
+
+/* ── Sticker card system: black border + black offset shadow ── */
+.sticker {
+  border-radius: 1rem;
+  border: 2px solid var(--text-dark);
+  box-shadow: 6px 6px 0 0 var(--text-dark);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Mustard shadow variant — use on dark / black backgrounds */
+.sticker-mustard-shadow {
+  border-radius: 1rem;
+  border: 2px solid var(--text-dark);
+  box-shadow: 8px 8px 0 0 var(--mustard);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Small offset variant */
+.sticker-sm {
+  border-radius: 0.85rem;
+  border: 2px solid var(--text-dark);
+  box-shadow: 4px 4px 0 0 var(--text-dark);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover lift */
+.sticker-lift:hover,
+.group:hover > .group-lift {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 0 var(--text-dark);
+}
+
+.sticker-mustard-shadow.sticker-lift:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 0 var(--mustard);
+}
+
+.sticker-sm.sticker-lift:hover,
+.group:hover > .group-lift.sticker-sm {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0 0 var(--text-dark);
+}
+
+/* Circular icon badge */
+.sticker-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid var(--text-dark);
+  color: var(--text-dark);
+  background: transparent;
+}
+
+/* Mustard-filled badge */
+.sticker-badge-mustard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid var(--text-dark);
+  color: var(--text-dark);
+  background: var(--mustard);
+}
+
+/* Grid texture */
+.editorial-grid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Animated noise grain — shader-like texture */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  animation: grain 0.5s steps(2) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-2%, -2%); }
+  50% { transform: translate(2%, 1%); }
+  75% { transform: translate(-1%, 2%); }
+}
+
+/* Mustard glow blob */
+.ember-spot {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(90px);
+  background: radial-gradient(
+    circle,
+    rgba(232, 168, 4, 0.30) 0%,
+    rgba(245, 200, 66, 0.12) 45%,
+    rgba(255, 255, 255, 0) 75%
+  );
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--mustard);
+  transform-origin: left;
+  z-index: 9999;
+  will-change: transform;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
