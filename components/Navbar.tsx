@@ -70,8 +70,8 @@ export default function Navbar() {
           }`}
         >
           <Link href="#home" className="flex items-center shrink-0" aria-label="BTechTutor home">
-            <span className="relative block h-11 w-36 overflow-hidden">
-              <Image src="/images/logo2.jpg" alt="BTechTutor" fill priority sizes="192px" className="object-cover object-center scale-[1.55]" />
+            <span className="relative block h-16 w-48 overflow-hidden">
+              <Image src="/images/logo3.png" alt="BTechTutor" fill priority sizes="224px" className="object-contain object-center" />
             </span>
           </Link>
 
